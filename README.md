@@ -3,13 +3,13 @@
 
 # How To Install
 
-clone the repository
-
-run phpize
-
-./configure
-
-make && make install
+``` bash
+% git clone --recursive --depth=1 https://github.com/proconsule/php-ext-yazstd
+% phpize
+% ./configure
+% make
+% make install
+```
 
 # How To Use
 
