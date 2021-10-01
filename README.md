@@ -1,5 +1,5 @@
 # yazstd
-> a small PHP extension to support zStandard chunks streaming decompression on PHP it was created to give zStandard support for NSP Indexer but can be used also for other purposes
+> a small PHP extension to support zStandard chunks streaming compression/decompression on PHP it was created to give zStandard support for NSP Indexer but can be used also for other purposes
 
 # How To Install
 
@@ -13,6 +13,16 @@
 
 # How To Use
 
+Compression
+
+```
+$compressionLevel = 15;
+$yazstd = new yazstd_compress(compressionLevel);
+$compressedChunk = $yazstd->decompress($rawChunk); //with all chunks you have
+$compressedChunk = $yazstd->endstream(); //at the end of streaming data (may be 0 if no data remain to flush)
+```
+
+Decompression
 ```
 $yazstd = new yazstd_decompress();
 $decompressedChunk = $yazstd->decompress($compressedChunk);
