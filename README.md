@@ -1,5 +1,5 @@
 # yazstd
-> a small PHP extension to support zStandard chunks streaming compression/decompression on PHP it was created to give zStandard support for NSP Indexer but can be used also for other purposes
+> Yet Another zstd is a small PHP extension to support zStandard chunks streaming compression/decompression it was created to give zStandard support for NSP Indexer but can be used also for other purposes
 
 # How To Install
 
